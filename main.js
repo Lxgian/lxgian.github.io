@@ -288,15 +288,15 @@ function save() {
 function load() {
 	try {
 		var obj = localStorage.getItem(SAVE_NAME);
-		obj = obj ? JSON.parse(obj) : {test_goodwill: 0, ffmoney: 10, potatoes: 0, potatoFries: 0, potatoesStorage: 10, potatoFriesStorage:10 };
-		goodwill = obj.goodwill;
+		obj = obj ? JSON.parse(obj) : {stat_goodwill: 0, ffmoney: 10, potatoes: 0, potatoFries: 0, potatoesStorage: 10, potatoFriesStorage:10 };
+		stat_goodwill = obj.stat_goodwill;
 		ffmoney = obj.ffmoney;
 		potatoes = obj.potatoes;
 		potatoFries = obj.potatoFries;
 
 		potatoesStorage = obj.potatoesStorage;
 		potatoFriesStorage = obj.potatoFriesStorage;
-    console.log('Loaded saved game from localStorage', `Goodwill: ${goodwill}, FF Money: ${ffmoney}, Potatoes: ${potatoes}, Potato Fries: ${potatoFries}, Potato Storage: ${potatoesStorage}, Potato Fries Storage: ${potatoFriesStorage}`);
+    console.log('Loaded saved game from localStorage', `Goodwill: ${stat_goodwill}, FF Money: ${ffmoney}, Potatoes: ${potatoes}, Potato Fries: ${potatoFries}, Potato Storage: ${potatoesStorage}, Potato Fries Storage: ${potatoFriesStorage}`);
     setMessage('Food Fare Loaded!');
 		updateDisplay();
 	} catch(e) {
