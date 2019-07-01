@@ -278,7 +278,7 @@ function save() {
 	};
 	try {
 		localStorage.setItem(SAVE_NAME, JSON.stringify( saveobject ));
-    console.log('Saved', `Goodwill: ${goodwill}, FF Money: ${ffmoney}, Potatoes: ${potatoes}, Potato Fries: ${potatoFries}, Potato Storage: ${potatoesStorage}, Potato Fries Storage: ${potatoFriesStorage}`);
+    console.log('Saved', `Goodwill: ${test_goodwill}, FF Money: ${ffmoney}, Potatoes: ${potatoes}, Potato Fries: ${potatoFries}, Potato Storage: ${potatoesStorage}, Potato Fries Storage: ${potatoFriesStorage}`);
     setMessage('Food Fare Saved!');
 	} catch(e) {
 		console.error('Save Error:', e);
@@ -288,7 +288,7 @@ function save() {
 function load() {
 	try {
 		var obj = localStorage.getItem(SAVE_NAME);
-		obj = obj ? JSON.parse(obj) : {goodwill: 0, ffmoney: 10, potatoes: 0, potatoFries: 0, potatoesStorage: 10, potatoFriesStorage:10 };
+		obj = obj ? JSON.parse(obj) : {test_goodwill: 0, ffmoney: 10, potatoes: 0, potatoFries: 0, potatoesStorage: 10, potatoFriesStorage:10 };
 		goodwill = obj.goodwill;
 		ffmoney = obj.ffmoney;
 		potatoes = obj.potatoes;
