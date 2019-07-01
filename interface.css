@@ -1,0 +1,98 @@
+
+<style>
+body{
+  margin:0;
+  overflow:hidden;   }
+/*#optionsControl{
+  right: 0.5em;			}
+#optionsControl:hover{
+  text-decoration: underline;			} */
+#optionsWindow{
+  display:none;
+  position:fixed;
+  top:10%;
+  left:10%;
+  right:10%;
+  padding:1em;
+  text-align:center;
+  vertical-align:middle;
+  z-index:1;
+  background-color:white;
+  border:2px solid black;			}
+#optionsWindow div{
+  margin:1em 0;			}
+#optionsWindow p{
+  margin:0.5em 0;			}
+#optionsWindow button{
+  position: static;			}
+</style>
+
+<style>
+body{
+  margin:0;
+  overflow:hidden;   }
+#tutorialWindow{
+  display:none;
+  position:fixed;
+  top:10%;
+  left:10%;
+  right:10%;
+  padding:1em;
+  text-align:center;
+  vertical-align:middle;
+  z-index:1;
+  background-color:white;
+  border:2px solid black;			}
+#tutorialWindow div{
+  margin:1em 0;			}
+#tutorialWindow p{
+  margin:0.5em 0;			}
+#tutorialWindow button{
+  position: static;			}
+</style>
+
+
+
+
+
+/*--------------------------------------------*/
+<style>
+body {font-family: Arial;}
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
